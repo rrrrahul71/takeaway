@@ -1,0 +1,305 @@
+<div ng-controller="restaurantCtrl as restaurant">
+  <md-content layout="row" flex class="backcolor">
+    <div layout-fill>
+      <md-grid-list md-cols="12" class="back-img-result">
+        <div layout="column" layout-gt-md="row" class="align-xs" layout-wrap>
+          <div class="left-logo"><a href="#"><img class="logo-img-main" ng-src="assets/img/logo.png" alt="logo"></a></div>
+          <div class="left-store-image">
+            <a href="#" class="store-img"><img class="app-store-img" ng-src="assets/img/app-store.png" alt="App-Store"></a>
+            <a href="#" class="store-img"><img class="Google-playstore-img" ng-src="assets/img/google-play.png" alt="Google-Playstore"></a>
+            <div class="log-sign">
+              <a class="register-text" ng-click="showSignup($event)" href="#">Register Now</a>
+              &nbsp;&nbsp;
+              /
+              &nbsp;&nbsp;
+              <a class="login-text" ng-click="showCustom($event)" href="#">Sign in</a>
+            </div>
+          </div>
+        </div>
+        <div layout="row" layout-gt-sm="row" layout-padding>
+          <div flex layout-sm="column">
+            <div layout="row" layout-align="center">
+
+              <h1 class="main-heading-result"><span>&nbsp;</span></h1>
+            </div>
+
+          </div>
+        </div>
+      </md-grid-list>
+
+     
+      
+      <!-- Menu -->
+      
+       <div layout="row" layout-align="center center">
+        <div flex-gt-md="80" layout-gt-md="row" layout="column" class="padding-top-20 padding-bottom-20">
+        	
+        <div flex flex-gt-md="25">
+            
+            <div layout="column" layout-align="center" class="boxcontentcenter">
+            <ul class="secondcol">
+              <li><i class="fa fa-star" aria-hidden="true"></i></li>
+              <li><i class="fa fa-star" aria-hidden="true"></i></li>
+              <li><i class="fa fa-star" aria-hidden="true"></i></li>
+              <li><i class="fa fa-star" aria-hidden="true"></i></li>
+              <li>4.0/5</li>
+            </ul>
+          </div>
+            
+          </div>
+          
+          <div flex flex-gt-md="50">
+          	
+          	<figure class="restaurant-logo"><img class="img-responsive" src="assets/img/restaurant-logo.png" alt="logo"></figure>
+            <h1 class="section-top-heading">Odessa Tandoori - E7</h1>
+          	
+          	</div>
+          	
+          	<div flex flex-gt-md="25" style="text-align:right; float:right:">
+          	
+          	 <md-button class="md-raised placeorder-btn">Make a Reservation</md-button>
+          	
+          	</div>
+        	
+          </div>
+      </div>
+      
+      
+      
+   <div layout="row"  layout-align="center center">
+        <div flex-gt-md="80"  class="padding-top-20 padding-bottom-20 menuwidth">    
+<md-content class="md-padding">
+  <md-nav-bar
+      md-selected-nav-item="currentNavItem"
+      nav-bar-aria-label="navigation links">
+    <md-nav-item md-nav-click="goto('page1')" name="page1"> HOME </md-nav-item>
+    <md-nav-item md-nav-click="goto('page2')" name="page2"> RESERVATION </md-nav-item>
+    <md-nav-item md-nav-click="goto('page3')" name="page3"> OFFERS </md-nav-item>
+    <md-nav-item md-nav-click="goto('page3')" name="page3"> GALLERY </md-nav-item>
+    <md-nav-item md-nav-click="goto('page3')" name="page3"> REVIEWS </md-nav-item>
+    <md-nav-item md-nav-click="goto('page3')" name="page3"> YELP REVIEWS </md-nav-item>
+    <md-nav-item md-nav-click="goto('page3')" name="page3"> CONTACT INFO </md-nav-item>
+    <md-nav-item md-nav-click="goto('page3')" name="page3"> FACILITIES</md-nav-item>
+  </md-nav-bar>
+</md-content>
+</div>
+</div>
+
+
+      
+	 
+	 	
+      
+
+      <div layout="row" layout-align="center center">
+        <div flex-gt-md="80" layout-gt-md="row" layout="column" class="padding-top-20 padding-bottom-20">
+          <div flex flex-gt-md="25">
+            <md-list flex class="resultleftlist">
+              <md-subheader class="md-no-sticky headingsort">Sort By</md-subheader>
+              	<md-list-item>
+              	  <div class="md-list-item-text">
+				    <a href="#">Starters</a>
+				    <i class="material-icons">keyboard_arrow_right</i>
+				  </div>
+				</md-list-item>
+				<md-list-item>
+				  <div class="md-list-item-text">
+				    <a href="#">Tandoori Dishes</a>
+				    <i class="material-icons">keyboard_arrow_right</i>
+				  </div>
+				</md-list-item>
+				<md-list-item>
+				  <div class="md-list-item-text">
+				    <a href="#">Biryani Dishes</a>
+				    <i class="material-icons">keyboard_arrow_right</i>
+				  </div>
+				</md-list-item>
+				<md-list-item>
+				  <div class="md-list-item-text">
+				    <a href="#">Chef Recommendations</a>
+				   <i class="material-icons">keyboard_arrow_right</i>
+				  </div>
+				</md-list-item>
+				<md-list-item>
+				  <div class="md-list-item-text">
+				    <a href="#">Chicken Dishes</a>
+				    <i class="material-icons">keyboard_arrow_right</i>
+				  </div>
+				</md-list-item>
+				<md-list-item>
+				  <div class="md-list-item-text">
+				    <a href="#">Chicken Dishes</a>
+				    <i class="material-icons">keyboard_arrow_right</i>
+				  </div>
+				</md-list-item>
+				<md-list-item>
+				  <div class="md-list-item-text">
+				    <a href="#">Lamb Dishes</a>
+				    <i class="material-icons">keyboard_arrow_right</i>
+				  </div>
+				</md-list-item>
+				<md-list-item>
+				  <div class="md-list-item-text">
+				    <a href="#">Sea Food Dishes</a>
+				    <i class="material-icons">keyboard_arrow_right</i>
+				  </div>
+				</md-list-item>
+				<md-list-item>
+				  <div class="md-list-item-text">
+				    <a href="#">Vegetable Dishes</a>
+				   <i class="material-icons">keyboard_arrow_right</i>
+				  </div>
+				</md-list-item>
+				<md-list-item>
+				  <div class="md-list-item-text">
+				    <a href="#">Balti Dishes</a>
+				   <i class="material-icons">keyboard_arrow_right</i>
+				  </div>
+				</md-list-item>
+				<md-list-item>
+				  <div class="md-list-item-text">
+				    <a href="#">Side Dishes</a>
+				    <i class="material-icons">keyboard_arrow_right</i>
+				  </div>
+				</md-list-item>
+				<md-list-item>
+				  <div class="md-list-item-text">
+				    <a href="#">Rice & Breads</a>
+				    <i class="material-icons">keyboard_arrow_right</i>
+				  </div>
+				</md-list-item>
+				<md-list-item>
+				  <div class="md-list-item-text">
+				    <a href="#">Relishes </a>
+				    <i class="material-icons">keyboard_arrow_right</i>
+				  </div>
+				</md-list-item>
+            </md-list>
+          </div>
+          <div flex flex-gt-md="50" class="right-col" >
+            <div layout="row" layout-align="center center" class="searchback">
+             	<md-header class="md-no-sticky headingsort">Starters</md-header>
+            </div>
+            <div class="boxdata">
+              <div layout-gt-md="row" layout="column" layout-align="left center" class="backcolor-white margin-top-20 margin-xs-top-20">
+              	
+              	<div flex-gt-md="10" class="xs-width-box">
+                   <md-card-title-media>
+            <div class="md-media-sm card-media">
+            	
+            <img class="img-responsive" src="assets/img/img1.jpg" alt="logo">
+            	
+            </div>
+          </md-card-title-media>
+                </div>
+              	
+                <div flex-gt-md="50" class="xs-width-box">
+                  <div layout="column" layout-align="left center" class="boxcontent border1px">
+                    <h4>Onion Bhaji</small></h4>
+                    <p>
+                     The bhajia or bhaji comprises of sliced or chopped ingredients mixed into a batter
+                    </p>
+                   
+                  </div>
+                </div>
+                
+                <div flex-gt-md="20" class="boxcontentbtn xs-width-box">
+                  <div layout="column" layout-align="center">
+                    <md-button class="md-raised placeorder-btn">Select This</md-button>
+                  </div>
+                </div>
+              </div>
+               <div layout-gt-md="row" layout="column" layout-align="left center" class="backcolor-white margin-top-20 margin-xs-top-20">
+              	
+              	<div flex-gt-md="10" class="xs-width-box">
+                   <md-card-title-media>
+            <div class="md-media-sm card-media">
+            	
+            <img class="img-responsive" src="assets/img/img1.jpg" alt="logo">
+            	
+            </div>
+          </md-card-title-media>
+                </div>
+              	
+                <div flex-gt-md="50" class="xs-width-box">
+                  <div layout="column" layout-align="left center" class="boxcontent border1px">
+                    <h4>Onion Bhaji</small></h4>
+                    <p>
+                     The bhajia or bhaji comprises of sliced or chopped ingredients mixed into a batter
+                    </p>
+                   
+                  </div>
+                </div>
+                
+                <div flex-gt-md="15" class="boxcontentbtn xs-width-box">
+                  <div layout="column" layout-align="center">
+                    <md-button class="md-raised placeorder-btn">Select This</md-button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          <div flex flex-gt-md="25" class="right-col">
+  					<div layout="row" class="headingbackmenu">
+  						<span>Your Cart</span>
+  					</div>
+  					<div class="boxdata">
+  						<div layout="column" class="backcolor-white min-height-right-col">
+  							<md-radio-group layout="row" class="custom-radio">
+  							  <md-radio-button value=0 class="md-primary">Collection</md-radio-button>
+  							  <md-radio-button value=1> Delivery </md-radio-button>
+  							</md-radio-group>
+      						<div layout="row" flex layout-align="center center" class="headers">
+  						  		<div flex="35">Item</div>
+  						  		<div flex="15">Qty.</div>
+  						  		<div flex="40">Action</div>
+  				  			</div>
+  						  	<div layout="row" flex layout-align="center center" class="content-rows">
+  						  		<div flex="35">King Prawn Butterfly</div>
+  						  		<div flex="15">1</div>
+  						  		<div flex="40" layout="row">
+  						  			<md-button class="md-raised blue-btn pad0"><i class="fa fa-plus" aria-hidden="true"></i></md-button>
+  						  			<md-button class="md-raised red-btn pad0"><i class="fa fa-minus" aria-hidden="true"></i></md-button>
+  						  		</div>
+  				  			</div>
+  				  			<div layout="row" flex layout-align="center center" class="content-rows">
+  						  		<div flex="35">King Prawn Butterfly</div>
+  						  		<div flex="15">1</div>
+  						  		<div flex="40" layout="row">
+  						  			<md-button class="md-raised blue-btn pad0"><i class="fa fa-plus" aria-hidden="true"></i></md-button>
+  						  			<md-button class="md-raised red-btn pad0"><i class="fa fa-minus" aria-hidden="true"></i></md-button>
+  						  		</div>
+  				  			</div>
+  				  			<div layout="row" flex layout-align="center center" class="content-rows">
+  						  		<div flex="35">King Prawn Butterfly</div>
+  						  		<div flex="15">1</div>
+  						  		<div flex="40" layout="row">
+  						  			<md-button class="md-raised blue-btn pad0"><i class="fa fa-plus" aria-hidden="true"></i></md-button>
+  						  			<md-button class="md-raised red-btn pad0"><i class="fa fa-minus" aria-hidden="true"></i></md-button>
+  						  		</div>
+  				  			</div>
+  				  			<div layout="row" flex layout-align="center center" class="content-rows">
+  						  		<div flex="35">King Prawn Butterfly</div>
+  						  		<div flex="15">1</div>
+  						  		<div flex="40" layout="row">
+  						  			<md-button class="md-raised blue-btn pad0"><i class="fa fa-plus" aria-hidden="true"></i></md-button>
+  						  			<md-button class="md-raised red-btn pad0"><i class="fa fa-minus" aria-hidden="true"></i></md-button>
+  						  		</div>
+  				  			</div>
+  				  			<div layout="column"  layout-align="center">
+  			      				<md-button class="md-raised emptycart-btn">Empty Cart</md-button>
+  			      				<md-button class="md-raised placeorder-btn generate-price">Generate Price</md-button>
+  			      			</div>
+  						 </div>
+  						
+  					  </div>
+					
+			    </div>
+        </div>
+      </div>
+    </div>
+  </md-content>
+		  <div ui-view='footer' class="mdl-mega-footer__bottom-section"></div>
+</div>

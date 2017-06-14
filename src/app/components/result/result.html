@@ -1,0 +1,156 @@
+<div ng-controller="resultCtrl as result">
+	<md-content layout="row" flex class="backcolor">
+	<div layout-fill>
+		<md-grid-list md-cols="12" class="back-img-result">
+		
+			<div layout="column" layout-gt-md="row" class="align-xs" layout-wrap>
+				
+			  <div class="left-logo"><a href="#"><img class="logo-img-main" ng-src="assets/img/logo.png" alt="logo"></a></div>
+			  
+			  <div class="left-store-image">
+				<a href="#" class="store-img"><img class="app-store-img" ng-src="assets/img/app-store.png" alt="App-Store"></a>
+				<a href="#" class="store-img"><img class="Google-playstore-img" ng-src="assets/img/google-play.png" alt="Google-Playstore"></a>
+				<div class="log-sign">
+					<a class="register-text" ng-click="showSignup($event)" href="#">Register Now</a>
+					&nbsp;&nbsp; 
+					/
+					&nbsp;&nbsp; 
+					<a class="login-text" ng-click="showCustom($event)" href="#">Sign in</a>
+			 	</div>
+			  </div>
+			  
+			</div>
+		
+			<div layout="row" layout-gt-sm="row" layout-padding>
+			  
+			  <div flex layout-sm="column">
+				
+				<div layout="row" layout-align="center">
+					
+				  
+				  <h1 class="main-heading-result"><span><i class="fa fa-list"></i> <br />SEARCH RESULTS</span></h1>
+				</div>
+				
+				
+			  </div>
+			  
+			</div>
+			
+		</md-grid-list>
+		
+		<div layout="row" layout-align="center center">
+			<div flex-gt-md="80" layout-gt-md="row" layout="column" class="padding-top-20 padding-bottom-20">
+				<div flex flex-gt-md="25">
+					 <md-list flex class="resultleftlist">
+					 	<md-subheader class="md-no-sticky headingsort">Sort By</md-subheader>
+					 	<md-radio-group  layout="column" class="custom-radio">
+							  <div class="linktext"><span>Best Match</span> <md-radio-button value="abc" class="inline-radio"></md-radio-button> </div>
+							  <div class="linktext"><span>Distance</span><md-radio-button value="def" class="inline-radio"></md-radio-button> </div>
+							  <div class="linktext"><span>New</span><md-radio-button value="ghi" class="inline-radio"></md-radio-button> </div>
+							  <div class="linktext"><span>Avg. rating</span><md-radio-button value="jkl" class="inline-radio"></md-radio-button> </div>
+							  <div class="linktext"><span>A-Z</span><md-radio-button value="mno" class="inline-radio"></md-radio-button> </div>
+						</md-radio-group>
+			        </md-list>
+			    </div>
+				<div flex flex-gt-md="75" class="right-col">
+					<div layout="row" layout-align="center center" class="searchback">
+						<div flex-gt-md="95" class="xs-width" layout="row">
+					        <md-input-container flex class="md-icon-float md-block md-title search-border">
+					            <label>Enter Your Postcode</label>
+					            <input type="text">
+					        </md-input-container>
+					        <div>
+					            <md-button class="md-raised search-btn">
+					            <!-- below is the material icons -->
+					                Search Now
+					            </md-button>
+					        </div>
+					     </div>
+					</div>
+					<div class="boxdata">
+						<div  layout-gt-md="row" layout="column" layout-align="left center" class="backcolor-white margin-top-20 margin-xs-top-20">
+						  	<div flex-gt-md="60" class="xs-width-box">
+						  		<div layout="column"  layout-align="left center" class="boxcontent">
+	                                  <h4>Jaiput Restaurant in E18 1jj <small>(100% Match)</small></h4>
+						              <p>65 George Lane,South Woodford, London, United Kingdom.
+						Welcome to the Jaipur Award Winning Restaurant</p>
+						              <ul>
+						                <li><b>Food Type</b> : Indian, Halal  </li>
+						                <li><b>Distance</b> : 1.76 Miles </li>
+						                <li><b>Collection</b> : 4.51 </li>
+						              </ul>
+	                             </div>
+						    </div>
+						  	<div flex-gt-md="20" class="xs-width-box">
+						    	<div layout="column"  layout-align="center" class="boxcontentcenter">
+					              <ul class="secondcol">
+					                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+					                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+					                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+					                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+					              </ul>
+					              <span>2 Yelp Reviews</span>
+					              <ul class="secondcolbottom">
+					                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+					                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+					                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+					                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+					              </ul>
+					              <span>No Individual Reviews</span>
+					             </div>
+						    </div>
+						  	<div flex-gt-md="15" class="boxcontentbtn xs-width-box">
+						  		<div layout="column"  layout-align="center">
+						  			<span>N&pound;45.05</span>
+				      				<md-button class="md-raised placeorder-btn">Place Order</md-button>
+				      			</div>
+						    </div>
+						 </div>
+						<div  layout-gt-md="row" layout="column" layout-align="left center" class="backcolor-white margin-top-20 margin-xs-top-20">
+						  	<div flex-gt-md="60" class="xs-width-box">
+						  		<div layout="column"  layout-align="left center" class="boxcontent">
+	                                  <h4>Jaiput Restaurant in E18 1jj <small>(100% Match)</small></h4>
+						              <p>65 George Lane,South Woodford, London, United Kingdom.
+						Welcome to the Jaipur Award Winning Restaurant</p>
+						              <ul>
+						                <li><b>Food Type</b> : Indian, Halal  </li>
+						                <li><b>Distance</b> : 1.76 Miles </li>
+						                <li><b>Collection</b> : 4.51 </li>
+						              </ul>
+	                             </div>
+						    </div>
+						  	<div flex-gt-md="20" class="xs-width-box">
+						    	<div layout="column"  layout-align="center" class="boxcontentcenter">
+					              <ul class="secondcol">
+					                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+					                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+					                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+					                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+					              </ul>
+					              <span>2 Yelp Reviews</span>
+					              <ul class="secondcolbottom">
+					                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+					                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+					                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+					                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+					              </ul>
+					              <span>No Individual Reviews</span>
+					             </div>
+						    </div>
+						  	<div flex-gt-md="15" class="boxcontentbtn xs-width-box">
+						  		<div layout="column"  layout-align="center">
+						  			<span>N&pound;45.05</span>
+				      				<md-button class="md-raised placeorder-btn">Place Order</md-button>
+				      			</div>
+						    </div>
+						 </div>
+						
+					</div>
+					
+			    </div>
+			 </div>
+		</div>
+		<div ui-view='footer'></div>
+	</div>
+	</md-content>
+</div>

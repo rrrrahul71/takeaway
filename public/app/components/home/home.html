@@ -1,0 +1,81 @@
+<div class="crossfade">
+	<figure></figure>
+	<figure></figure>
+	<figure></figure>
+	<figure></figure>
+	<figure></figure>
+</div>
+<div ng-controller="homeCtrl as home">
+	<md-content layout="row" flex class="back-img">
+		<div layout-fill>
+		<div layout="column" layout-gt-md="row" class="align-xs" layout-wrap>
+			
+		  <div class="left-logo"><a href="#"><img class="logo-img-main" ng-src="assets/img/logo.png" alt="logo"></a></div>
+		  
+		  <div class="left-store-image">
+			<a href="#" class="store-img"><img class="app-store-img" ng-src="assets/img/app-store.png" alt="App-Store"></a>
+			<a href="#" class="store-img"><img class="Google-playstore-img" ng-src="assets/img/google-play.png" alt="Google-Playstore"></a>
+			<div class="log-sign">
+				<a class="register-text" ng-click="showSignup($event)" href="#">Register Now</a>
+				&nbsp;&nbsp; 
+				/
+				&nbsp;&nbsp; 
+				<a class="login-text" ng-click="showCustom($event)" href="#">Sign in</a>
+		 	</div>
+		  </div>
+		  
+		</div>
+	
+		<div layout="row" layout-gt-sm="row" layout-padding>
+		  
+		  <div flex layout-sm="column">
+		  	
+		  	<div layout="row" layout-align="center end">
+			  <img class="logo-img" ng-src="assets/img/logo-big.png" alt="logo">
+			</div>
+			
+			<div layout="row" layout-align="center">
+			  <h1 class="main-heading"><span>SAVE MONEY ON</span> TAKEAWAYS</h1>
+			</div>
+			
+			<div layout="row" layout-align="center center">
+				<div flex-gt-sm="70" class="xs-width" layout="row">
+			        <md-input-container flex class="md-icon-float md-block md-title search-border">
+			            <label>Enter Your Postcode</label>
+			            <input type="text">
+			        </md-input-container>
+			        <div>
+			            <md-button class="md-raised search-btn">
+			            <!-- below is the material icons -->
+			                Search Now
+			            </md-button>
+			        </div>
+			     </div>
+			</div>
+			
+			<div layout="row" layout-align="center center">
+				<div flex-gt-md="70" flex-gt-md="80" flex layout="row" layout-align="center center" class="searchin-text" layout-wrap>
+					<div flex-xs="50">
+				  		<a href="#">1. Enter your postcode</a>
+				  	</div>
+				  	<div flex-xs="50">
+				  		<a href="#">2. Deep mine web menus</a>
+					</div>
+					<div flex-xs="50">
+				  		<a href="#">3. Select items & compare price</a>
+				  	</div>
+				  	<div flex-xs="50">
+				  		<a href="#">4. Choose best options</a>
+					</div>
+				</div>
+			</div>
+			<div layout="row" layout-align="center center" class="margin-sm-right-3 margin-top-50 margin-bottom-70 margin-top-xs-15" layout-margin>
+				<img class="cards" ng-src="assets/img/card.png" alt="Cards">
+			</div>
+		  </div>
+		  
+		</div>
+		<div ui-view='footer'></div>
+	</div>
+	</md-content>
+</div>
